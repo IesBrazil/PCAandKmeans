@@ -7,7 +7,7 @@
 
 ## PCA & DataPrep
 
-base <- tabela_AmostraM4U
+base <- databaseCustomers.RData
 base.numeric <- base[, sapply(base, class) == "numeric"]
 
 ACP <- prcomp(base.numeric, scale = TRUE)
